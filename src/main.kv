@@ -7,7 +7,11 @@
         BoxLayout:
             orientation: "horizontal"
             Label:
-                text: "Introduce the url of the image"
+                text: "Introduce the url of the image, if are more of one separete with ';'"
+                font_size: 15
+                text_size: self.size
+                height: self.texture_size[1]
+                valign: "middle"
             TextInput:
                 id: image_url
                 multiline: True
