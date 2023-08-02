@@ -1,0 +1,25 @@
+<MainLayout>
+    image_url: image_url
+    image_name: image_name
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        BoxLayout:
+            orientation: "horizontal"
+            Label:
+                text: "Introduce the url of the image"
+            TextInput:
+                id: image_url
+                multiline: True
+        BoxLayout:
+            orientation: "horizontal"
+            Label:
+                text: "Introduce the name of the image"
+            TextInput:
+                id: image_name
+                multiline: False
+        Button:
+            text: "Download Image"
+            pos_hint: {'center_x': .5}
+            size_hint: (0.5,0.5)
+            on_press: root.on_press()
